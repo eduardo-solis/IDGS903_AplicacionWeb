@@ -1,0 +1,44 @@
+﻿@model IDGS903_AplicacionWeb.Models.OperasBas
+
+@{
+    ViewBag.Title = "Suma";
+}
+
+<h2>Suma</h2>
+<div class="container">
+    <div class="row">
+        <form action="/" method="post">
+            <label for="Num1">Numero 1:</label>
+            <br />
+            <input class="form-control" type="text" name="Num1" value="" />
+
+            <br />
+            <br />
+
+            <label for="Num2">Numero 2:</label>
+            <br />
+            <input class="form-control" type="text" name="Num2" value="" />
+            <br />
+            <br />
+            <input class="btn btn-primary" type="submit" name="name" value="Calcular" />
+
+            <br />
+            <br />
+
+
+            <input type="radio" name="r1" value="Sumar" checked />
+            <label for="r1">Suma</label>
+            <br />
+            <input type="radio" name="r1" value="Restar" />
+            <label for="r1">Resta</label>
+
+
+        </form>
+    </div>
+
+    <div class="col">
+        <h1>Suma</h1>
+        <h2>@Model.Res</h2>
+    </div>
+
+</div>
