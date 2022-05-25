@@ -1,0 +1,34 @@
+﻿@model List<IDGS903_AplicacionWeb.Models.Alumnos>
+
+@{
+    ViewBag.Title = "MuestraAlumnos";
+}
+
+<h2>MuestraAlumnos</h2>
+
+<br />
+<br />
+
+<div>
+    <table class="table table-hover">
+        
+        <th>Matricula</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Correo</th>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.Matricula</td>
+                <td>@item.Nombre</td>
+                <td>@item.Apellidos</td>
+                <td>@item.Edad</td>
+                <td>@item.Correo</td>
+            </tr>
+            } 
+        </tbody>
+    </table>
+</div>
+
