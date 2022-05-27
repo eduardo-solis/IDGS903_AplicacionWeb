@@ -1,0 +1,26 @@
+﻿@model IDGS903_AplicacionWeb.Models.Alumnos
+
+@{
+    ViewBag.Title = "LeerDatos";
+}
+
+<h2>LeerDatos</h2>
+
+<div class="col">
+    <table class="table table-striped">
+        <tbody>
+            @foreach(var item in ViewBag.tem)
+            {
+            <tr>
+                @foreach (var registro in item.Split(','))
+                {
+                    <td>@registro</td>
+                }
+
+            </tr>
+            }
+        </tbody>
+    
+</table>
+</div>
+

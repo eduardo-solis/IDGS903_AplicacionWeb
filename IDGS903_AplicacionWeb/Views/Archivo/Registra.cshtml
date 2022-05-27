@@ -1,0 +1,39 @@
+﻿@model IDGS903_AplicacionWeb.Models.Alumnos
+
+@{
+    ViewBag.Title = "Registra";
+}
+
+<h2>Registra</h2>
+
+
+<div class="col">
+    <form action="/Archivo/Registra" method="post">
+        <div class="mb-3">
+            <label for="Matricula" class="form-label">Matricula</label>
+            <input type="text" class="form-control" name="Matricula" value="" placeholder="Matricula" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="Nombre" value="" placeholder="Nombre" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" name="Apellidos" value="" placeholder="Apellidos" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Edad" class="form-label">Edad</label>
+            <input type="text" class="form-control" name="Edad" value="" placeholder="Edad" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Correo" class="form-label">Correo</label>
+            <input type="text" class="form-control" name="Correo" value="" placeholder="Correo" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" name="name" value="Enviar">Registrar</button>
+    </form>
+</div>
